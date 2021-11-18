@@ -15,6 +15,6 @@ namespace Dal.Models
         [StringLength(100)]
         public string Nome { get; set; }
 
-        public DateTime DataNascimento { get; set; }
+        public DateTime? DataNascimento { get; set; }
     }
 }

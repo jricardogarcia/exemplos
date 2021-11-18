@@ -41,7 +41,6 @@ namespace GvFlix.Api.Controllers
         public async Task<ActionResult<Ator>> GetAtor(int id)
         {
             var ator = await _context.Ator.FindAsync(id);
-
             if (ator == null)
             {
                 return NotFound();
