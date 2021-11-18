@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Dal.Models
 {
-    public class Ator
+    public class Diretor
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
