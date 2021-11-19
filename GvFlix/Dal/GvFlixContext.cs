@@ -12,6 +12,7 @@ namespace Dal
         public DbSet<Ator> Ator { get; set; }
         public DbSet<Cliente> Cliente { get; set; }
         public DbSet<Diretor> Diretor { get; set; }
+        public DbSet<Filme> Filme { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -26,6 +27,9 @@ namespace Dal
 
             modelBuilder
                 .Entity<Diretor>();
+
+            modelBuilder
+                .Entity<Filme>();
         }
     }
 }
