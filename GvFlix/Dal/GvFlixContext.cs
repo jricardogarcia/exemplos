@@ -10,6 +10,7 @@ namespace Dal
         }
 
         public DbSet<Ator> Ator { get; set; }
+        public DbSet<Cliente> Cliente { get; set; }
         public DbSet<Diretor> Diretor { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -19,6 +20,9 @@ namespace Dal
 
             modelBuilder
                 .Entity<Ator>();
+
+            modelBuilder
+                .Entity<Cliente>();
 
             modelBuilder
                 .Entity<Diretor>();
